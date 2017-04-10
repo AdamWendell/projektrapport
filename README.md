@@ -68,3 +68,29 @@ Får build att funka. Men det går långsamt då servern som man får tillgång 
 Koppla ihop min NGINX och node app. Samt få det live på en digital ocean server.
 Circle ci kör testerna. Om de går igenom så pushar det min nya container till docker hub. När docker hub fått en uppdatering så skickar den en notic till docker cloud som uppdaterar containern på min server.
 
+
+### Diskussion
+
+Jag trodde docker var simpelt. Men det kräver fortfarande samma kunskap som en vanlig server deploy. Dock ger det en garanti att man kan scala sin miljö genom att starta flera containrar på olika servar. Det hjälper framförallt att bygga små appar (microservices). Det gör så att man scala delar av sin applikation beroende på belastning.
+Om jag skulle göra om mitt projekt så skulle jag tidigare gå över till att bygga min app och bara göra det som krävdes i docker. Istället för att försöka lära mig hela docker direkt.
+
+
+### Slutsats
+
+Målet när jag startade kursen var att få en större förståelse för deployments. Då utbildningen saknade det. Docker var det verktyg som jag hörde mest om innan för att hjälpa med det.
+
+Min metod var att börja med att försöka lära mig så mycket om docker det bara gick. Detta ändrades lite då docker är väldigt stort och det går att göra enormt mycket.
+
+Reslutatet blev mindre app bygge än planerat. Men jag fick byggt de saker som var viktigast för mig. Ett system där man kan bygga sin app och kontinuerligt göra deploments till live servern.
+
+
+### Källförteckning
+
+ 1. [Dockers dokumentation](https://docs.docker.com/)
+ 2. [Dockerbook](https://www.dockerbook.com/)
+
+
+### Kod
+
+ 1. [Nginx](https://github.com/AdamWendell/projektnginx)
+ 2. [Web server](https://github.com/AdamWendell/projektweb)
